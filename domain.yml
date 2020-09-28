@@ -1,0 +1,59 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- leave_policy
+- leave_annual
+- LTA_info
+- leave_sick
+- work_from_home
+- internet_policy
+entities:
+- PERSON
+slots:
+  PERSON:
+    type: text
+responses:
+  utter_LTA_info:
+  - text: ' LTA details are provided in the HR policy document, Please refer , thanks
+      .'
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - buttons:
+    - payload: /leave_policy
+      title: Leave Policy
+    - payload: /LTA_info
+      title: LTA (Leave Travel Allowance)
+    - payload: /work_from_home
+      title: Work From Home(WFH)
+    - payload: /internet_policy
+      title: Internet policy
+    text: Hi..!This is HR BOT, Please choose topics for any help required.
+  utter_leave_annual:
+  - text: As per Company policy you would have around 24 Annual leaves,Is there anything
+      i can help
+  utter_leave_policy:
+  - buttons:
+    - payload: /leave_annual
+      title: Annual Leave
+    - payload: /leave_sick
+      title: Sick Leave
+    text: Please select Leave Type Annual Leave or Sick Leave
+  utter_leave_sick:
+  - text: ' As per company policy you would have 5 sick leave, hope details were usefull
+      , Thanks .'
+  utter_work_from_home:
+  - text: ' As per company policy work from home is something which needs to be looked
+      at caes to case basis , Hence please contact your respective supervisor '
+actions:
+- utter_greet
+- utter_goodbye
+- utter_leave_policy
+- utter_leave_annual
+- utter_LTA_info
+- utter_leave_sick
+- utter_work_from_home
+- action_internet_policy
