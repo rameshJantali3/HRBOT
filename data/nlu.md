@@ -5,6 +5,7 @@
 - good morning
 - good evening
 - hey there
+- Hey
 
 ## intent:goodbye
 - bye
@@ -34,6 +35,7 @@
 - what is LTA policy
 - Provide details around my LTA
 - my LTA info
+- Lta
 
 ## intent:leave_sick
 - sick
