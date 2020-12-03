@@ -33,7 +33,7 @@ responses:
       title: Internet policy
     text: Hi..!This is HR BOT, Please choose topics for any help required.
   utter_leave_annual:
-  - text: As per Company policy you would have around 24 Annual leaves,Is there anything
+  - text: 21(AL) Per Annum will be given on prorata basis,Is there anything else
       i can help
   utter_leave_policy:
   - buttons:
@@ -43,11 +43,11 @@ responses:
       title: Sick Leave
     text: Please select Leave Type Annual Leave or Sick Leave
   utter_leave_sick:
-  - text: ' As per company policy you would have 5 sick leave, hope details were usefull
+  - text: '  5 sick leave per annum will be provided prorata basis, Hope details were usefull
       , Thanks .'
   utter_work_from_home:
   - text: ' As per company policy work from home is something which needs to be looked
-      at caes to case basis , Hence please contact your respective supervisor '
+      at case to case basis , Hence please contact your respective supervisor '
 actions:
 - utter_greet
 - utter_goodbye
