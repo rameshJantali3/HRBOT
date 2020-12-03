@@ -38,7 +38,7 @@ class ActionInternetPolicy(Action):
              tracker: Tracker,
              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-         dispatcher.utter_message(text="You would be getting flat 500 rs as "
+         dispatcher.utter_message(text="You would be getting flat 300 rs as "
                                        "internet policy,anything else..please type Hey!")
 
          return []
